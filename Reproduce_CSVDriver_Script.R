@@ -2,7 +2,7 @@ source("./lib/lib.R")
 
 # Cancer cohort in the study
 cohort <- c("bone", "brain", "breast", "colon", "esophagus", "kidney", "liver", "lung",  "lymph-nodes", "ovary", "pancreas", "prostate", "skin", "stomach", "uterus")
-# set the name of the cohort
+# Set the cohort to be analyzed
 cohort_name <- cohort[1]
 
 
