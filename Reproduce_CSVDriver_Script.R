@@ -7,7 +7,7 @@ cohort_name <- cohort[1]
 
 
 # list of SV dataset for a given cohort
-Input_Files_list <- list.files(path=paste0("./Input/cancer_organ/",cohort_name), pattern=".unique.bedpe$", full.names=TRUE)
+Input_Files_list <- list.files(path=paste0("./Input/cancer_organ/",cohort_name), pattern=".bedpe$", full.names=TRUE)
 
 #reading and combinding several file
 ISV_DT <- rbindlist( lapply(Input_Files_list, fread,  sep="\t", sep2="", dec=".", quote="\"", skip=0, header=TRUE, stringsAsFactors=TRUE, na.strings="NA", logical01=TRUE, strip.white=TRUE, fill=FALSE, blank.lines.skip=TRUE, data.table=TRUE) )
