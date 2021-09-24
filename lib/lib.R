@@ -238,7 +238,6 @@ return(RT)
 
 TAD.Segment <- function(cohort_name){
   TAD_segment <- as.data.table(read.delim(paste0("./Input/cancer_organ/",cohort_name,"/TAD_segment_",cohort_name,"_ChromMark_class.txt") , sep = "", quote = "\"'", header=TRUE))
-  TAD_segment <- unique(TAD_segment[ tissue == cohort_name, c("chr", "start", "end", "TAD.class")]) # == name_map[tisue==f_name]$chromHMM
   colnames(TAD_segment) <- c("chrom", "start", "end", "TAD_segment.class")
   TAD_segment$end <- as.integer(TAD_segment$end)
   TAD_segment$start <- as.integer(TAD_segment$start)
