@@ -11,11 +11,11 @@ Bioinformatics tool to identify SV drivers from whole-genome sequences.
 
 > Before running the Reproduce_CSVDriver_Script.R with the input demo gennome_annotation.zip file must be decompressed.
 
-**To run the demo just set the cohort_name = "demo".** 
+* To run the demo just set the cohort_name = "demo" 
 
 > In the Reproduce_CSVDriver_Script.R  cohort_name <- cohort[1]
  
-Then run the complete script to get the full set of results  
+> Then run the complete script to get the full set of results  
 
 ### Input (input folder)
 
@@ -61,7 +61,7 @@ Table_Result_demo_significant_Genes_best_candidate_in_peak
 
 > While runing on a full SV dataset from cancer cohorts the script could take several hours, because the GAM modeling the algorithm is computationally heavy.
 
-### To run CSVDriver in a cohort the SV input files must be placed in the corresponding folders likewise the demo.
+* To run CSVDriver in a cohort the SV input files must be placed in the corresponding folders likewise the demo.
 
 >  Before running the Reproduce_CSVDriver_Script.R, some files must be decompressed for each cancer cohort. 
   * TAD_segment_[cohort]_ChromMark_class.zip
@@ -69,10 +69,10 @@ Table_Result_demo_significant_Genes_best_candidate_in_peak
   * chromHMM_cohort_Archive.zip
   * tissue_ehnacer_marks 
   
-> To run the a particular cohort set the cohort_name from the list
+* To run the a particular cohort set the cohort_name from the list
 > cohort <- c("demo", "bone", "brain", "breast", "colon", "esophagus", "kidney", "liver", "lung",  "lymph-nodes", "ovary", "pancreas", "prostate", "skin", "stomach", "uterus")
  
- cohort_name <- cohort[ cohort_index]
+> cohort_name <- cohort[ cohort_index]
 
 
 ### CSVDriver data sources
