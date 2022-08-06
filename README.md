@@ -61,13 +61,9 @@ Table_Result_demo_significant_Genes_best_candidate_in_peak
 
 > While runing on a full SV dataset from cancer cohorts the script could take several hours, because the GAM modeling the algorithm is computationally heavy.
 
-* To run CSVDriver in a cohort the SV input files must be placed in the corresponding folders likewise the demo.
+* To run CSVDriver in a cohort the SV input files must be placed in the corresponding folders 'input/cancer/[cohort]/' likewise the demo.
 
->  Before running the Reproduce_CSVDriver_Script.R, some files must be decompressed for each cancer cohort. 
-  * TAD_segment_[cohort]_ChromMark_class.zip
-  * ccre_cohort_Archive.zip  
-  * chromHMM_cohort_Archive.zip
-  * tissue_ehnacer_marks 
+>  Before running the Reproduce_CSVDriver_Script.R, the TAD_segment_[cohort]_ChromMark_class.zip file in the 'input/cancer/[cohort]/' forlder must be decompressed for each corresponding cancer cohort. 
   
 * To run the a particular cohort set the cohort_name from the list
 > cohort <- c("demo", "bone", "brain", "breast", "colon", "esophagus", "kidney", "liver", "lung",  "lymph-nodes", "ovary", "pancreas", "prostate", "skin", "stomach", "uterus")
