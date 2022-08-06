@@ -63,7 +63,7 @@ Table_Result_demo_significant_Genes_best_candidate_in_peak
 
 * To run CSVDriver in a cohort the SV input files must be placed in the corresponding folders 'input/cancer/[cohort]/' likewise the demo.
 
->  Before running the Reproduce_CSVDriver_Script.R, the TAD_segment_[cohort]_ChromMark_class.zip file in the 'input/cancer/[cohort]/' forlder must be decompressed for each corresponding cancer cohort. 
+>  Before running the Reproduce_CSVDriver_Script.R, the TAD_segment_[cohort]_ChromMark_class.zip file in the 'input/cancer/[cohort]/' folder must be decompressed for each corresponding cancer cohort. 
   
 * To run the a particular cohort set the cohort_name from the list
 > cohort <- c("demo", "bone", "brain", "breast", "colon", "esophagus", "kidney", "liver", "lung",  "lymph-nodes", "ovary", "pancreas", "prostate", "skin", "stomach", "uterus")
